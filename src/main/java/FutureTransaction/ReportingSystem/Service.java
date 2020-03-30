@@ -58,7 +58,7 @@ public class Service {
         	logger.log(Level.SEVERE, "Unexpected Error Occured "+e.toString());
         }
         StringBuilder builder = new StringBuilder();
-        String columnNamesList = "ClientId"+"\t"+"ProductId"+"\t"+"NetTransactionAmount";
+        String columnNamesList = "Client_Information"+"\t"+"Product_Information"+"\t"+"Total_Transaction_Amount";
         
         builder.append(columnNamesList +"\n");
         pw.write(builder.toString());
